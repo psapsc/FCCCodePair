@@ -13,26 +13,34 @@
       <input type="text" name="username" placeholder="Enter a username...">
       <input type="email" name="email" placeholder="Enter your email...">
       <input type="password" name="password" placeholder="Enter a password...">
+      <button type="button">Sign-up!</button>
     </div>
     <div id="signin" onclick="formControl(this.id);">
       <h1>I already have an account!</h1>
     </div>
+    <div id="signinForm">
+      <input type="text" name="username" placeholder="Enter a username...">
+      <input type="password" name="password" placeholder="Enter a password...">
+      <button type="button">Sign-in!</button>
+    </div>
   </div>
-  <!--<div id="yourDetails">
-    <div id="yourOptions">
-      <p>Status: </p>
-      <select>
-        <option value="online">Online</option>
-        <option value="away">Away</option>
-        <option value="busy">Do not Disturb</option>
-        <option value="offline">Offline</option>
-      </select>
+  <div class="mainList">
+    <div id="yourDetails">
+      <div id="yourOptions">
+        <p>Status: </p>
+        <select>
+          <option value="online">Online</option>
+          <option value="away">Away</option>
+          <option value="busy">Do not Disturb</option>
+          <option value="offline">Offline</option>
+        </select>
+      </div>
+      <div id="yourName">
+        <img src="../images/defaultprofpic.png" id="profilePic">
+        <h1>Wesley</h1>
+      </div>
     </div>
-    <div id="yourName">
-      <img src="../images/defaultprofpic.png" id="profilePic">
-      <h1>Wesley</h1>
-    </div>
-  </div>-->
+  </div>
 
   <script src="../js/main.js"></script>
 </body>
