@@ -5,15 +5,20 @@
      <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-  <!--<div id="signon">
-    <div id="signup">
+  <div id="signon">
+    <div id="signup" onclick="formControl(this.id);">
       <h1>I need an account!</h1>
     </div>
-    <div id="signin">
+    <div id="signupForm">
+      <input type="text" name="username" placeholder="Enter a username...">
+      <input type="email" name="email" placeholder="Enter your email...">
+      <input type="password" name="password" placeholder="Enter a password...">
+    </div>
+    <div id="signin" onclick="formControl(this.id);">
       <h1>I already have an account!</h1>
     </div>
-  </div>-->
-  <div id="yourDetails">
+  </div>
+  <!--<div id="yourDetails">
     <div id="yourOptions">
       <p>Status: </p>
       <select>
@@ -27,7 +32,7 @@
       <img src="../images/defaultprofpic.png" id="profilePic">
       <h1>Wesley</h1>
     </div>
-  </div>
+  </div>-->
 
   <script src="../js/main.js"></script>
 </body>

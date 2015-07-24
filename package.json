@@ -3,8 +3,8 @@
   "main":"./html/index.html",
   "version":"0.1.0",
   "window": {
-		"toolbar": false,
     "width": 400,
-    "height": 600
+    "height": 600,
+    "resizable": false
 	}
 }
