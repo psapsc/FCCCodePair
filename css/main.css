@@ -40,12 +40,12 @@ body {
 
 #signon {
   position: absolute;
+  margin-top: -100px;
   margin-left: -150px;
-  top: calc(50% - 100px);
+  top: 50%;
   left: 50%;
   width: 300px;
   background-color: white;
-  transition: top 0.5s ease;
 }
 #signon h1 {
   font-size: 22px;
@@ -59,7 +59,6 @@ body {
 }
 #signin {
   height: 75px;
-  transition: .5s;
 }
 
 #signup:hover {
@@ -72,9 +71,7 @@ body {
 }
 
 #signupForm {
-  opacity: 0;
-  height: 0;
-  transition: all .5s ease;
+  display: none;
 }
 #signinForm {
   display: none;

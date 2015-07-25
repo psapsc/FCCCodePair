@@ -1,11 +1,12 @@
+
+
 function formControl (id){
   element = document.getElementById(id);
   if(id === "signup" && !element.classList.contains('clicked')){
     document.getElementById('signin').style.display = "none";
     element.classList.add("clicked");
-    document.getElementById('signon').style.top = "calc(50% - 145px);";
-    document.getElementById('signupForm').style.opacity = '1';
-    document.getElementById('signupForm').style.height = 'auto';
+    document.getElementById('signon').style.marginTop = "-145px";
+    document.getElementById('signupForm').style.display = 'inline';
   }
   else if(id === "signup" && element.classList.contains('clicked')){
     document.getElementById('signin').style.display = "inline";
