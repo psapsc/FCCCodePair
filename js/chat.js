@@ -18,7 +18,7 @@ function handleConnection(conn) {
 	
 	conn.on("open", function() {
 		textArea.append("\nConnected to " + conn.peer + " say hi");
-		send.val("Send");
+		send.html("Send");
 		
 		// receive messages
 		conn.on("data", function(data) {
@@ -26,8 +26,10 @@ function handleConnection(conn) {
 		});
 		
 		// send message when user clicks on send
+		send.removeAttr("onclick");
 		send.click(function() {
 			conn.send(message.val());
+			textArea.append("\n" + message.val());
 			message.val("");
 		});
 		
