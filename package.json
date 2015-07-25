@@ -2,6 +2,7 @@
   "name":"simple-text-editor",
   "main":"./html/index.html",
   "version":"0.1.0",
+  "single-instance": false,
   "window": {
     "width": 400,
     "height": 600,
