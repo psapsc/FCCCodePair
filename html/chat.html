@@ -2,14 +2,42 @@
 <html>
 <head>
     <title>FCC CodePair Chat</title>
+    <link rel="stylesheet" type="text/css" href="../css/chat.css">
 </head>
 <body>
-	<textarea id="txtmessages" rows="20" cols="45" disabled>Welcome...</textarea>
-	<input id="id" type="text" name="id" placeholder="connect to..."></input>
-	<button id="send" type="button" name="connect" onclick="connect()">Connect</button>
+	<div class="mainList">
+		<div id="yourDetails">
+		  <div id="yourOptions">
+			<p>Status: </p>
+			<select>
+			  <option value="online">Online</option>
+			  <option value="away">Away</option>
+			  <option value="busy">Do not Disturb</option>
+			  <option value="offline">Offline</option>
+			</select>
+		  </div>
+		  <div id="yourName">
+			<img src="../images/defaultprofpic.png" id="profilePic">
+			<h1>Wesley</h1>
+			<p id="brokeringId">ID: </p>
+		  </div>
+		</div>
 
+		<div id="connectionList" class="tab active">
+			<div class="stitched noselect" onclick="toggleConnectDetails()">
+				<h1>+</h1>
+				<h2>New Connection</h2>
+			</div>
+			<div id="connectDetails">
+				<div>
+				<label>ID:</label>
+				<input id="connectId" style="width:225px;" class="tb" type="text"></input>
+				<button class="sendButton" type="button" onclick="openConnectionToPeer()">Connect</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="../lib/peer.js"></script>
 	<script src="../js/chat.js"></script>
 </body>

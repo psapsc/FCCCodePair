@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+}
+
+.mainList {
+}
+
+#profilePic {
+  float: left;
+  height: 40px;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+#yourDetails {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-bottom: 2px solid black;
+}
+
+#yourName h1 {
+  float: left;
+  font-size: 28px;
+  line-height: 50px;
+  margin-left: 5px;
+}
+
+#yourName p {
+	float: left;
+	line-height: 50px;
+	margin-left: 5px;
+	font-size: 13px;
+}
+
+#yourOptions {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#connectionList {
+	overflow: auto;
+	height: 510px;
+}
+
+.connection {
+	border-radius: 5px;
+	margin:5px;
+	padding: 3px;
+}
+
+.connection hr {
+	 border: 0; 
+	 height: 1px; 
+	 background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+	 background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.stitched {
+   padding: 20px;
+   margin: 10px;
+   background: #9B9B8C;
+   color: #fff;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #9B9B8C, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #565654;
+   font-weight: normal;
+   text-align: center;
+}
+
+.stitched:hover {
+	cursor: pointer;
+	background: #293D66;
+	box-shadow: 0 0 0 4px #293D66, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	text-shadow: -1px -1px #565654;
+}
+
+.stitched h1 {
+	display: block;
+	float: left;
+}
+
+#connectDetails {
+	display: none;
+	margin-top: -6px;
+	width: 350px;
+	height: 30px;
+	margin-left:16px;
+	background: #293D66;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-top: 0px;
+	padding-left: 10px;
+	color: #fff;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.tab {
+	display: none;
+}
+
+.tab.active {
+	display: block;
+}
+
+.chatBox {
+	background: #9B9B8C;
+	color: #FFF;
+	height: 415px;
+	margin: 5px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.tb {
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 25px;
+	width: 270px;
+	margin-top:3px;
+}
+
+.tb:focus {
+	outline:0;
+}
+
+.chatContents {
+	height: 93%;
+	overflow: auto;
+}
+
+.sendButton {
+	border: 2px solid #456879;
+	border-radius: 10px;
+	outline: none;
+	width: 75px;
+	height: 25px;
+}
